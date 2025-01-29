@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 150px; 
+            background-color: #fff;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .box-img {
+            height: 100px; 
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .box-title {
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f9f9f9;
+            width: 80%; 
+            margin: auto; 
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        
+        .pets {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto; 
+            justify-items: center;
+        }
+
+        .pet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 300px; 
+            background-color: #fff;
+        }
+
+        .pet:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .pet-img {
+            height: 180px; 
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pet-title {
+            padding: 10px;
+            font-size: 18px; 
+            text-align: center;
+            font-weight: bold;
+            background-color: #f9f9f9;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="images">
+        <a href="/dogs.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg');"></div>
+                <h3 class="box-title">Dogs</h3>
+            </div>
+        </a>
+        <a href="/cats.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStOj-nTCmPne41wl0NTC9FqHnS3V4myM6Am-YX0bQtfsBjaFsGL2NsnGIFOXT2kKhnHQA&usqp=CAU');"></div>
+                <h3 class="box-title">Cats</h3>
+            </div>
+        </a>
+        <a href="/rabbits.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://twinmaplesvethospital.com/wp-content/uploads/2023/01/Exotic-Pets-img.jpg');"></div>
+                <h3 class="box-title">Rabbits</h3>
+            </div>
+        </a>
+        <a href="/fishes.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://images.pexels.com/photos/3220368/pexels-photo-3220368.jpeg');"></div>
+                <h3 class="box-title">Fishes</h3>
+            </div>
+        </a>
+        <a href="/birds.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://www.thesprucepets.com/thmb/r23RBk0t4DC9UHp2pTzuXLz7Jj4=/3600x0/filters:no_upscale():strip_icc()/popular-small-bird-species-390926-hero-d3d0af7bb6ed4947b0c3c5afb4784456.jpg');"></div>
+                <h3 class="box-title">Birds</h3>
+            </div>
+        </a>
+        <a href="/butterflies.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mulAbir4ixhKIerfx1MAPAiZhV8Jy5HY5Q&s');"></div>
+                <h3 class="box-title">Butterflies</h3>
+            </div>
+        </a>
+    </div>
+    
+    <section class="pets">
+        <div class="pet">
+             <div class="pet-img" style="background-image: url('https://as2.ftcdn.net/jpg/04/64/15/31/1000_F_464153165_GTqUCLrADzpwt907rsjJhnMwT44Lnxaz.jpg');"></div> 
+            <div class="pet-title">Brush Rabbit</div>
+        </div>
+        <div class="pet">
+            <div class="pet-img" style="background-image: url('https://www.shutterstock.com/image-photo/funny-baby-white-rabbit-grass-260nw-259777370.jpg');"></div>
+            <div class="pet-title">Florida White</div>
+        </div>
+        <div class="pet">
+            <div class="pet-img" style="background-image: url('https://www.shutterstock.com/image-photo/small-young-black-rabbit-260nw-1132822109.jpg');"></div>
+            <div class="pet-title"> Holland Lop</div>
+        </div>
+        <div class="pet">
+            <div class="pet-img" style="background-image: url('https://media.istockphoto.com/id/476515345/photo/baby-grey-rabbit-in-the-grass.jpg?s=612x612&w=0&k=20&c=-hOK3rK4ShWdCtfUSS_8v26qdjepH6_EkNQWTfwf46c=');"></div>
+            <div class="pet-title">Flemish Giant</div>
+        </div>
+    </section>
+</body>
+</html>
+
