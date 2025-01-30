@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butterflies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 150px; 
+            background-color: #fff;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .box-img {
+            height: 100px; 
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .box-title {
+            padding: 8px;
+            font-size: 14px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f9f9f9;
+            width: 80%; 
+            margin: auto; 
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .pets {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto; 
+            justify-items: center;
+        }
+
+        .pet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 100%;
+            max-width: 300px; 
+            background-color: #fff;
+        }
+
+        .pet:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .pet-img {
+            height: 180px; 
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .pet-title {
+            padding: 10px;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f9f9f9;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="images">
+        <a href="/dogs.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg');"></div>
+                <h3 class="box-title">Dogs</h3>
+            </div>
+        </a>
+        <a href="/cats.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStOj-nTCmPne41wl0NTC9FqHnS3V4myM6Am-YX0bQtfsBjaFsGL2NsnGIFOXT2kKhnHQA&usqp=CAU');"></div>
+                <h3 class="box-title">Cats</h3>
+            </div>
+        </a>
+        <a href="/rabbits.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://twinmaplesvethospital.com/wp-content/uploads/2023/01/Exotic-Pets-img.jpg');"></div>
+                <h3 class="box-title">Rabbits</h3>
+            </div>
+        </a>
+        <a href="/fishes.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://images.pexels.com/photos/3220368/pexels-photo-3220368.jpeg');"></div>
+                <h3 class="box-title">Fishes</h3>
+            </div>
+        </a>
+        <a href="/birds.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://www.thesprucepets.com/thmb/r23RBk0t4DC9UHp2pTzuXLz7Jj4=/3600x0/filters:no_upscale():strip_icc()/popular-small-bird-species-390926-hero-d3d0af7bb6ed4947b0c3c5afb4784456.jpg');"></div>
+                <h3 class="box-title">Birds</h3>
+            </div>
+        </a>
+        <a href="/butterflies.html" target="_blank">
+            <div class="box">
+                <div class="box-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2mulAbir4ixhKIerfx1MAPAiZhV8Jy5HY5Q&s');"></div>
+                <h3 class="box-title">Butterflies</h3>
+            </div>
+        </a>
+    </div>
+   
+    <section class="pets">
+        <div class="pet">
+            <div class="pet-img" style="background-image: url('https://hgtvhome.sndimg.com/content/dam/images/hgtv/stock/2018/2/22/0/iStock_butterfly-bush_172224178_large.jpg.rend.hgtvcom.616.411.85.suffix/1519325104116.webp');"></div>
+            <div class="pet-title">Monarch Butterfly</div>
+        </div>
+        <div class="pet">
+            <div class="pet-img" style="background-image:url('https://www.popsci.com/wp-content/uploads/2023/05/15/ButterflyFamilyTree.png?quality=85');"></div>
+            <div class="pet-title">Blue Morpho Butterfly</div>
+        </div>
+        <div class="pet">
+            <div class="pet-img" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKe3-1xk81aiAuGjfGmWjMtQacUraRcy3ukg&s');"></div>
+            <div class="pet-title">Common Blue Butterfly</div>
+        </div>
+        <div class="pet">
+            <div class="pet-img" style="background-image: url('https://images.unsplash.com/photo-1541267044290-858b4f3e8154?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGluayUyMGJ1dHRlcmZseXxlbnwwfHwwfHx8MA%3D%3D');"></div>
+            <div class="pet-title">Julia Butterfly</div>
+        </div>
+    </section>
+</body>
+</html>
+
